@@ -15,7 +15,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @SpringBootTest(classes = SpringBootHelloWorldApplication.class)
-public class SpringBootHelloWorldTests extends AbstractTestNGSpringContextTests {
+ class SpringBootHelloWorldTests extends AbstractTestNGSpringContextTests {
 
     @Autowired
     private WebApplicationContext webApplicationContext;
@@ -35,7 +35,7 @@ public class SpringBootHelloWorldTests extends AbstractTestNGSpringContextTests 
     }
 
     @Test
-    public void testEmployee() throws Exception {
+     void testEmployee() throws Exception {
         System.out.println("Test");
         mockMvc.perform(get("/employee")).andExpect(status().isOk())
                 .andExpect(content().contentType("application/json;charset=UTF-8"))
