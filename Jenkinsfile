@@ -7,7 +7,7 @@ pipeline {
     }
 
     stages {
-        stage('SCM-CheckIns') {
+        /*stage('SCM-CheckIns') {
             steps{
                 // Get some code from a GitHub repository
                 //git 'https://github.com/Saleem313/SpringBootHelloWorld_TestNG.git'
@@ -18,7 +18,7 @@ pipeline {
                 // bat "mvn -Dmaven.test.failure.ignore=true clean package"
             }
 
-        }
+        }*/
         stage('Test'){
            steps{
                sh "mvn test"
