@@ -8,7 +8,7 @@ pipeline {
 
     stages {
         stage('SCM-CheckIns') {
-            steps {
+            steps{
                 // Get some code from a GitHub repository
                 //git 'https://github.com/Saleem313/SpringBootHelloWorld_TestNG.git'
 
